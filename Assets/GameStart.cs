@@ -1,12 +1,19 @@
 using UnityEngine;
-using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class GameStart : MonoBehaviour
 {
+    // Bボタンが押されたら実行する
+    void Update()
+    {
+        if (Input.GetButtonDown("Jump"))
+        {
+            StartGame();
+        }
+    }
 
-    //　スタートボタンを押したら実行する
-    public void StartGame()
+    // ゲームを開始するメソッド
+    void StartGame()
     {
         SceneManager.LoadScene("SampleScene");
     }
