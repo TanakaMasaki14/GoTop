@@ -19,7 +19,7 @@ public class PlayerReset : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.U))
         {
-            ResetPosition();
+            SceneManager.LoadScene("Title");
         }
     }
 
